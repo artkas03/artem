@@ -3,14 +3,14 @@
 
 int main(){
 	int a;
-	a=3;
+	a=2;
 	a=a*a;
 	a=a*a;
-	a=3;
+	a=2;	//a^2
 	a=a*a*a;
 	a=a*a;	
-	a=3;
+	a=2;	//a^6 	
 	a=a*a*a*a;
-	a=a*a;
+	a=a*a;	//a^8
 	return 0;	
 }
