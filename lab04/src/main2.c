@@ -6,8 +6,8 @@ int main(){
 	b=(a-(int)a)*1000;
 	b=(int)b;
 	c=b/(int)a;
-	c=c*100;
+	c=c*10000;
 	c=(int)c;
-	c=(float)c/100;
+	c=(float)c/10000;
 	return 0;
 }	
