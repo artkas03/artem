@@ -13,5 +13,6 @@ int main(){
 	else{
 		sqrt=0;
 	}
+	sqrt=b;
 	return 0;
 }

@@ -1,5 +1,5 @@
 targets = main1.bin main2.bin main3.bin main4.bin main5.bin
-CC=gcc
+CC=gcc 
 C_OPTS = -std=gnu11 -g -Wall -Wextra -Wformat-security -Wfloat-equal -Wshadow -Wconversion -Wlogical-not-parentheses -Wuninitialized -Wnull-dereference
 
 all: clean prep compile run
