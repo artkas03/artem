@@ -191,6 +191,54 @@ int sqrtcount(int number){
 3. **Процес дебагінгу**
 	
 	За допомогою програми *nemiver* перевіряємо, щоб наші змінні, відповідали умові завдань, а результат мав сенс.
+	## Завдання №5 до лабораторної роботи №5 
+
+## Завдання №1 до лабораторної роботи №6
+
+1. **Створення файлу**
+
+	У терміналі, за допомогою команди cat>main6.1.c створюємо файл, для нашого майбутнього коду.
+2. **Кодування**
+
+```
+int vowelscounter(char mass[]){
+	int i=0, numberofvowels=0;
+	for(vowelscounter;mass[i]!='\0';i++){
+		if(mass[i]=='a' || mass[i]=='A'){
+			numberofvowels++;
+		}
+		else if(mass[i]=='e' || mass[i]=='E'){
+			numberofvowels++;
+		}
+		else if(mass[i]=='i' || mass[i]=='I'){
+			numberofvowels++;
+		}
+		else if(mass[i]=='o' || mass[i]=='O'){
+			numberofvowels++;
+		}
+		else if(mass[i]=='u' || mass[i]=='U'){
+			numberofvowels++;
+		}
+		else if(mass[i]=='y' || mass[i]=='Y'){
+			numberofvowels++;
+		}
+	}
+	return numberofvowels;
+}
+
+int main(){
+	int sizeofmass=0,numberofvowels=0;
+	char mass[]="Hello, my name is Artem!";
+	while(mass[sizeofmass]!='\0'){
+		sizeofmass++;
+	}
+	numberofvowels=vowelscounter(mass);
+	return 0;
+}
+```
+3. **Процес дебагінгу**
+	
+	За допомогою програми *nemiver* перевіряємо, щоб наші змінні, відповідали умові завдань, а результат мав сенс.
 
 ## Завдання №1 до лабораторної роботи №7 
 

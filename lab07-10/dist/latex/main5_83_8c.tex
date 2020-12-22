@@ -1,0 +1,49 @@
+\hypertarget{main5_83_8c}{}\doxysection{Файл lab07/main5.3.c}
+\label{main5_83_8c}\index{lab07/main5.3.c@{lab07/main5.3.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+Діаграма включених заголовочних файлів для main5.3.c\+:
+% FIG 0
+\doxysubsection*{Функції}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main5_83_8c_aa01d81924a4fe1b89110d2425718dd79}{luckycount}} (int number)
+\begin{DoxyCompactList}\small\item\em Ця функція вираховує кількість щасливих білетів, та визначає чи належить заданий білет до щасливих, чи ні. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main5_83_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Це звичайний int main, у якому вказуюється шестизначне число, а друге шестизначне число генерується генератором псевдовипадкових чисел, після чого викликаеться функція, для визначення, щасливий цей квиток чи ні. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Опис функцій}
+\mbox{\Hypertarget{main5_83_8c_aa01d81924a4fe1b89110d2425718dd79}\label{main5_83_8c_aa01d81924a4fe1b89110d2425718dd79}} 
+\index{main5.3.c@{main5.3.c}!luckycount@{luckycount}}
+\index{luckycount@{luckycount}!main5.3.c@{main5.3.c}}
+\doxysubsubsection{\texorpdfstring{luckycount()}{luckycount()}}
+{\footnotesize\ttfamily int luckycount (\begin{DoxyParamCaption}\item[{int}]{number }\end{DoxyParamCaption})}
+
+
+
+Ця функція вираховує кількість щасливих білетів, та визначає чи належить заданий білет до щасливих, чи ні. 
+
+Порядок дій такий\+:
+\begin{DoxyItemize}
+\item Створюється цикл, що буде обробляти кожне число від 100000 до 999999
+\item Кожна цифра числа вираховується окремо, та перетворюється на одиниці.
+\item Вираховується сума перших трьох та останніх трьох цифр.
+\item Якщо sum1 та sum2 однакові, цей білет є щасливим! Лічильник збільшується, а наш білет порівнюється с ци щасливим.
+\item Після усіх ітерацій, повертаєтсья значення {\itshape lucky}, яке може набувати значення 0 або 1. 
+\begin{DoxyParams}[1]{Аргументи}
+\mbox{\texttt{ in}}  & {\em number} & Перший аргумент записується у цей параметр. \\
+\hline
+\end{DoxyParams}
+
+\end{DoxyItemize}\mbox{\Hypertarget{main5_83_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main5_83_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main5.3.c@{main5.3.c}!main@{main}}
+\index{main@{main}!main5.3.c@{main5.3.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Це звичайний int main, у якому вказуюється шестизначне число, а друге шестизначне число генерується генератором псевдовипадкових чисел, після чого викликаеться функція, для визначення, щасливий цей квиток чи ні. 
+
+Граф всіх викликів цієї функції\+:
+% FIG 1

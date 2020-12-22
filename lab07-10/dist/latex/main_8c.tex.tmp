@@ -1,0 +1,44 @@
+\hypertarget{main_8c}{}\doxysection{Файл lab07/main.c}
+\label{main_8c}\index{lab07/main.c@{lab07/main.c}}
+{\ttfamily \#include $<$stdarg.\+h$>$}\newline
+Діаграма включених заголовочних файлів для main.\+c\+:
+% FIG 0
+\doxysubsection*{Функції}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8c_a1285485360baef3cfe416444ec3e0c98}{couplecount}} (int n,...)
+\begin{DoxyCompactList}\small\item\em Ця функція підраховує кількість пар чисел у масиві, що мают друге число більше за перше. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Це звичайний int main, в якому ми викликаємо нашу функцію. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Опис функцій}
+\mbox{\Hypertarget{main_8c_a1285485360baef3cfe416444ec3e0c98}\label{main_8c_a1285485360baef3cfe416444ec3e0c98}} 
+\index{main.c@{main.c}!couplecount@{couplecount}}
+\index{couplecount@{couplecount}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{couplecount()}{couplecount()}}
+{\footnotesize\ttfamily int couplecount (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+Ця функція підраховує кількість пар чисел у масиві, що мают друге число більше за перше. 
+
+
+\begin{DoxyParams}[1]{Аргументи}
+\mbox{\texttt{ in}}  & {\em n} & Перша цифра аргументів це їх кількість, що записується у змінну int n. \\
+\hline
+\mbox{\texttt{ in}}  & {\em Усі} & інші цифри це список цифр, що повинні передатися у масив. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.c@{main.c}!main@{main}}
+\index{main@{main}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Це звичайний int main, в якому ми викликаємо нашу функцію. 
+
+Граф всіх викликів цієї функції\+:
+% FIG 1
