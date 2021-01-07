@@ -16,7 +16,7 @@ void masscount(int *mass){
 	while(counter<=N){
 		int numbercount=0,numberinto=0,i=0;
 		int *p_masive=&mass[0];
-		for(i;i<=N;i++){	//Every element amount
+		for(i;i<=N;i++){	/*Every element amount*/
 			if(*p_masive==number){
 				numbercount++;
 			}
@@ -42,6 +42,7 @@ void masscount(int *mass){
 @brief it is a int main function where we initialize our masive and call the function.
 */
 int main(){
+	srand(time(NULL));
 	int *mass=(int*)malloc(N*sizeof(int*)); /*Build a dynamic masive*/
 	
 	for(int i=0;i<N;i++){ /*Make memory space for masive*/

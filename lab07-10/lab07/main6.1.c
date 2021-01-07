@@ -1,36 +1,21 @@
 #include <stdio.h>
 
-int vowelscounter(char mass[]){
-	int i=0, numberofvowels=0;
-	for(vowelscounter;mass[i]!='\0';i++){
-		if(mass[i]=='a' || mass[i]=='A'){
-			numberofvowels++;
-		}
-		else if(mass[i]=='e' || mass[i]=='E'){
-			numberofvowels++;
-		}
-		else if(mass[i]=='i' || mass[i]=='I'){
-			numberofvowels++;
-		}
-		else if(mass[i]=='o' || mass[i]=='O'){
-			numberofvowels++;
-		}
-		else if(mass[i]=='u' || mass[i]=='U'){
-			numberofvowels++;
-		}
-		else if(mass[i]=='y' || mass[i]=='Y'){
-			numberofvowels++;
+int counter(char mass[]){
+	int i=0, counter=0;
+	for(counter;mass[i]!='\0';i++){
+		if(mass[i]!='a' && mass[i]!='A' && mass[i]!='e' && mass[i]!='E' && mass[i]!='i' && mass[i]!='I' && mass[i]!='o' && mass[i]!='O' && mass[i]!='u' && mass[i]!='U' && mass[i]!='y' && mass[i]!='Y' && mass[i]!=' ' && mass[i]!=',' && mass[i]!='!' && mass[i]!='?'&& mass[i]!='.'){
+			counter++;
 		}
 	}
-	return numberofvowels;
+	return counter;
 }
 
 int main(){
-	int sizeofmass=0,numberofvowels=0;
+	int sizeofmass=0,count=0;
 	char mass[]="Hello, my name is Artem!";
 	while(mass[sizeofmass]!='\0'){
 		sizeofmass++;
 	}
-	numberofvowels=vowelscounter(mass);
+	count=counter(mass);
 	return 0;
 }

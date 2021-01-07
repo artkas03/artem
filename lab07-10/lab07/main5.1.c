@@ -35,7 +35,7 @@ int nodcounter(int first,int second){
 @brief Це звичайний int main, у якому вказуються два числа, ще два створюються генератором, після чого викликаєтсья функція, для підрахування іх найбільшого, спільного дільника.
 */
 int main(){
-	int first = 140,second = 1400,nod1,first2=0,second2=0,nod2;
+	int first = 21,second = 17,nod1,first2=0,second2=0,nod2;
 	nod1=nodcounter(first,second);
 	first2 = get_rand();
 	second2 = get_rand();

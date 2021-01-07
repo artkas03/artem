@@ -57,6 +57,7 @@ void masscounter(int *p_mass){
 @brief it is a int main function where we initialize our masive and call the function.
 */
 int main(){
+	srand(time(NULL));
 	int *mass=(int*)malloc(N*sizeof(int*)); /*Make dynamic masive */
 	
 	for(int i=0;i<N;i++){ /*Make memory space for masive*/

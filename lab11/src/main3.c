@@ -65,7 +65,7 @@ void masscounter(float *mass){
 int main(){
 	float mass1[N]={0}; /*Initialize masive*/
 	float *mass=&mass1[0];
-	
+	srand(time(NULL));
 	
 	for(int i=0;i<N;i++){ /*Fill masive by float random numbers from 0 to 30*/
 		for(int j=0;j<N;j++){

@@ -9,13 +9,25 @@ int main(){
 		c++;
 		if(a%c==0)
 		b=b+c;
-	};
-	b=b-1;
+	}
+	/*do{
+		c++;
+		if(a%c==0){
+		b=b+c;
+		}
+	}while(c<=a)*/
+		
+	/*for(c;c<=a;c++){
+		c++;
+		if(a%c==0)
+		b=b+c;
+	}*/
 	if(b==a){
 		prostoe=1;
 	}
 	else{
 		prostoe=0;
-	};
+	}
+	b=b-1;
 	return 0;
 }

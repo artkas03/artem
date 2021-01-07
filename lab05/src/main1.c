@@ -12,9 +12,9 @@ int main (){
 		if(a%c==0 && b%c==0){
 			nod=c;
 		}
-	};
+	}
 	
-	do{ //do...while cycle
+	/*do{ //do...while cycle
 		c++;
 		if(a%c==0 && b%c==0){
 			nod=c;
@@ -26,6 +26,6 @@ int main (){
 		if(a%c==0 && b%c==0){
 			nod=c;
 		}
-	}
+	}*/
 	return 0;
 }

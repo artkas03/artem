@@ -9,6 +9,13 @@ int main(){
 			b++;
 			sqrt=b*b;
 		}
+		/*do{
+			b++;
+			sqrt=b*b;
+		}while(sqrt!=a)
+		for(b;sqrt!=a;++b){
+		
+		}*/
 	}
 	else{
 		sqrt=0;
