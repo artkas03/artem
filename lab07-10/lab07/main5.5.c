@@ -6,8 +6,8 @@
 */
 #include <stdio.h>
 /**
-@brief Ця функція вираховує корінь з переданого числа.
-@param[in] number Перший аргумент записується у цей параметр.
+@brief This function subtracts the root from the transmitted number.
+@param[in] number The first argument is written to this parameter.
 */
 int sqrtcount(int number){
 	int b=0,sqrt=0;
@@ -24,7 +24,7 @@ int sqrtcount(int number){
 	return sqrt;
 }
 /**
-@brief Це звичайний int main, у якому вказуюється число, після чого визивається функція, дли вирахування його кореня.
+@brief This is a normal int main, which specifies a number, then calls the function, after subtracting its root.
 */
 int main(){
 	int num=16,sqrt;

@@ -6,9 +6,9 @@
 */
 #include <stdarg.h>
 /**
-@brief Ця функція підраховує кількість пар чисел у масиві, що мают друге число більше за перше.
-@param[in] n Перша цифра аргументів це їх кількість, що записується у змінну int n.
-@param[in]  Усі інші цифри це список цифр, що повинні передатися у масив.
+@brief This function checking count of couples in which first number is less then the second.
+@param[in] n First number in arguments is the number of numbers which we put into int n.
+@param[in]  All the others numbers are just list of numbers.
 */
 int couplecount(int n,...){
 	va_list args;
@@ -16,7 +16,7 @@ int couplecount(int n,...){
 	int mass[size];
 	size=0;
 	va_start(args, n);
-	for(size;i<n;i++){   //Заполнения массива данными числами
+	for(size;i<n;i++){   /*Fill masive with given numbers*/
 		mass[size]=va_arg(args,int);
 		size++;
 	}
@@ -31,7 +31,7 @@ int couplecount(int n,...){
 	return counter;
 }
 /**
-@brief Це звичайний int main, в якому ми викликаємо нашу функцію.
+@brief Simple int main, where we enter our data.
 */
 int main(){
 	int couples = 0;

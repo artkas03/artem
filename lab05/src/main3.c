@@ -1,68 +1,52 @@
 #include <stdio.h>
+#define N 6
 
 int main(){
-	int num,a,b,c,d,e,f,sum1,sum2,lucky,num1=100000,counter=0;
-	num=194770;
-	for(num1;num1<=999999 && num1>99999;num1++){
-		f=num1%10;
-		e=(num1-f)%100/10;
-		d=(num1-e*10-f)%1000/100;
-		c=(num1-d*100-e*10-f)%10000/1000;
-		b=(num1-c*1000-d*100-e*10-f)%100000/10000;
-		a=(num1-b*10000-c*1000-d*100-e*10-f)%1000000/100000;
-		sum1=a+b+c;
-		sum2=d+e+f;
-		if(sum1==sum2){
-			counter++;
-			if(num1==num){
-				lucky=1;
-			}
+	int lucky=0,sum1=0,sum2=0,number=194707,perem1=10,perem2=0,counter=0;
+	for(counter;counter<=N;counter++){ 
+		if(counter<(N/2)){
+			perem2=number%perem1;
+			number=number/perem1;
+			sum1=sum1+perem2;
 		}
-		else{
-			continue;
+		else if(counter>(N/2)){
+			perem2=number%perem1;
+			number=number/perem1;
+			sum2=sum2+perem2;	
 		}
 	}
-	/*do{
-		f=num1%10;
-		e=(num1-f)%100/10;
-		d=(num1-e*10-f)%1000/100;
-		c=(num1-d*100-e*10-f)%10000/1000;
-		b=(num1-c*1000-d*100-e*10-f)%100000/10000;
-		a=(num1-b*10000-c*1000-d*100-e*10-f)%1000000/100000;
-		sum1=a+b+c;
-		sum2=d+e+f;
-		if(sum1==sum2){
-			counter++;
-			if(num1==num){
-				lucky=1;
-			}
+	/*do{ 
+		if(counter<(N/2)){
+			perem2=number%perem1;
+			number=number/perem1;
+			sum1=sum1+perem2;
 		}
-		else{
-			continue;
+		else if(counter>(N/2)){
+			perem2=number%perem1;
+			number=number/perem1;
+			sum2=sum2+perem2;	
 		}
-		n++	
-	}while(num1<=999999 && num1>99999)
+		counter++;	
+	}while(counter<=N);*/
 	
-	while(num1<=999999 && num1>99999){
-		f=num1%10;
-		e=(num1-f)%100/10;
-		d=(num1-e*10-f)%1000/100;
-		c=(num1-d*100-e*10-f)%10000/1000;
-		b=(num1-c*1000-d*100-e*10-f)%100000/10000;
-		a=(num1-b*10000-c*1000-d*100-e*10-f)%1000000/100000;
-		sum1=a+b+c;
-		sum2=d+e+f;
-		if(sum1==sum2){
-			counter++;
-			if(num1==num){
-				lucky=1;
-			}
+	/*while(counter<=N){
+		if(counter<(N/2)){
+			perem2=number%perem1;
+			number=number/perem1;
+			sum1=sum1+perem2;
 		}
-		else{
-			continue;
+		else if(counter>(N/2)){
+			perem2=number%perem1;
+			number=number/perem1;
+			sum2=sum2+perem2;	
 		}
-		n++
+		counter++;
 	}*/
-
+	if(sum1==sum2){
+		lucky=1;
+	}
+	else{
+		lucky=0;
+	}
 	return 0;
 }

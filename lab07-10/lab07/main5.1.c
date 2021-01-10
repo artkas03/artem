@@ -8,7 +8,7 @@
 #include <stdlib.h>
 #include <time.h>
 /**
-@brief Ця функція генерує випадкове число, та повертає його.
+@brief This function generates a random number and returns it.
 */
 int get_rand(){
 	srand(time(NULL));
@@ -17,9 +17,9 @@ int get_rand(){
 	return a;
 }
 /**
-@brief Ця функція вираховує найбільший спільний дільник двох чисел.
-@param[in] first Перший аргумент записується у цей параметр.
-@param[in] second Другий аргумент записується у цей параметр.
+@brief This function calculates the greatest common divisor of two numbers.
+@param[in] first the first argument is written to this parameter.
+@param[in] second The second argument is written to this parameter.
 */
 int nodcounter(int first,int second){
 	int nod=0,a=0;
@@ -32,7 +32,7 @@ int nodcounter(int first,int second){
 	return nod;
 }
 /**
-@brief Це звичайний int main, у якому вказуються два числа, ще два створюються генератором, після чого викликаєтсья функція, для підрахування іх найбільшого, спільного дільника.
+@brief This is a normal int main, in which two numbers are specified, two more are created by the generator, after which the function is called to calculate their largest, common divisor.
 */
 int main(){
 	int first = 21,second = 17,nod1,first2=0,second2=0,nod2;
