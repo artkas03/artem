@@ -1,0 +1,10 @@
+digraph "main"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="main",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="This is a normal int main, which specifies a six-digit number, and the second six-digit number is gen..."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="luckycount",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#aa01d81924a4fe1b89110d2425718dd79",tooltip="This function determines whether a given ticket is lucky or not."];
+}
