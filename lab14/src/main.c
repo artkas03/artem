@@ -11,8 +11,10 @@
 @param[in] size Takes size of masive.
 */
 void calculator(char *mass,int size){
+	FILE *result;
 	int mass2[6];
-	int opplace=0,razryad=1,res=0,perem=0,counter=0,fnum=0,snum=0,fors=0,in=0,numpl=0,l=0;
+	int opplace=0,razryad=1,perem=0,counter=0,fnum=0,snum=0,fors=0,in=0,numpl=0,l=0;
+	float res=0;
 	int *p_mass2=&mass2[0];
 	for(int i=0;i<=size+1;i++){ /*write numbers into masive*/
 		if(*(mass+i)=='1'){
@@ -88,26 +90,42 @@ void calculator(char *mass,int size){
 		res=fnum*snum;
 	}
 	else if(*(mass+opplace)=='/'){
-		res=fnum/snum;
+		res=(float)fnum/(float)snum;
 	}
-	
+	printf("%f\n",res);
+	result=fopen("src/result.txt","w");
+	fprintf(result,"%f",res);
+	fclose(result);
 }
 /**
 @brief it is a int main function where we initialize our masive and call the function.
 */
 int main(){
-	char mass1[]="122+14";
-	char *p_mass=&mass1[0];
-	int size=0;
-	for(int i=0;*(p_mass+i)!='\0';i++){
-		size++;
+	FILE *data;
+	char dataf[10]="data.txt";
+	char check[10]="";
+	printf("Введите название файла с данными: ");
+	gets(check);
+	if(strcmp(dataf,check)==0){
+		data=fopen("src/data.txt","r");
+		char mass1[10]="";
+		fgets(mass1,10,data);
+		char *p_mass=&mass1[0];
+		int size=0;
+		for(int i=0;*(p_mass+i)!='\0';i++){
+			size++;
+		}
+		char *mass=(char*)malloc(size*sizeof(char*));	
+		for(int i=0;i<size;i++){
+			*(mass+i)=*(p_mass+i);
+		}
+		calculator(mass,size);
+		free(mass); /*Delete masive*/
+		fclose(data);
+		
 	}
-	char *mass=(char*)malloc(size*sizeof(char*));
-	
-	for(int i=0;i<size;i++){
-		*(mass+i)=*(p_mass+i);
+	else{
+		printf("Такого файла не существует!");
 	}
-	calculator(mass,size);
-	free(mass); /*Delete masive*/
 	return 0;
 }

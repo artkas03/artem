@@ -12,12 +12,18 @@
 */
 void author(){
 	char massname[50]="";
+	char name="";
 	printf("");
 	gets(massname);
-	printf("Введите имя автора: ");
+	printf("Введите фамилию автора: ");
 	gets(massname);
-	printf("Имя автора: ");
+	printf("Введите имя автора:");
+	name=getc(stdin);
+	printf("Фамилия автора: ");
 	puts(massname);
+	printf("Имя автора: ");
+	putc(name,stdout);
+	printf("\n");
 }
 /**
 @brief This function searches for the longest uninterrupted sequence out of all elements of given masive than puts this element into result masive.
