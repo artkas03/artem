@@ -93,7 +93,7 @@ void calculator(char *mass,int size){
 		res=(float)fnum/(float)snum;
 	}
 	printf("%f\n",res);
-	result=fopen("src/result.txt","w");
+	result=fopen("result.txt","w");
 	fprintf(result,"%f",res);
 	fclose(result);
 }
@@ -107,7 +107,7 @@ int main(){
 	printf("Введите название файла с данными: ");
 	gets(check);
 	if(strcmp(dataf,check)==0){
-		data=fopen("src/data.txt","r");
+		data=fopen("data.txt","r");
 		char mass1[10]="";
 		fgets(mass1,10,data);
 		char *p_mass=&mass1[0];

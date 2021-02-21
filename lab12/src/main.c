@@ -13,6 +13,8 @@
 void author(){
 	char massname[50]="";
 	char name="";
+	char labnum[5]="";
+	char theme[150]="";
 	printf("");
 	gets(massname);
 	printf("Введите фамилию автора: ");
@@ -23,6 +25,16 @@ void author(){
 	puts(massname);
 	printf("Имя автора: ");
 	putc(name,stdout);
+	printf("\n");
+	printf("Введите номер лабораторной работы: ");
+	gets(labnum);
+	printf("");
+	gets(labnum);
+	printf("Введите тему лабораторной работы: ");
+	gets(theme);
+	printf("Тема лабораторной работы №%s: %s",labnum,theme);
+	printf("\n");
+	printf("---------------------");
 	printf("\n");
 }
 /**
