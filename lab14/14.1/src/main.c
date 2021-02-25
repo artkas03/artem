@@ -1,7 +1,7 @@
 /**
 @mainpage
 @author Artem Kasyanov
-@date 21.12.2020
+@date 25.02.2021
 @version 1.0
 */
 #include <stdio.h>

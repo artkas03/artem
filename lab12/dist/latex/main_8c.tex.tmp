@@ -1,0 +1,68 @@
+\hypertarget{main_8c}{}\doxysection{Файл src/main.c}
+\label{main_8c}\index{src/main.c@{src/main.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+Діаграма включених заголовочних файлів для main.\+c\+:
+% FIG 0
+\doxysubsection*{Макровизначення}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{main_8c_a0240ac851181b84ac374872dc5434ee4}{N}}~3
+\end{DoxyCompactItemize}
+\doxysubsection*{Функції}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8c_ad0ce3f6fbea5969668bcce88c1d3d7e6}{author}} ()
+\begin{DoxyCompactList}\small\item\em This function gets name and surname of author and outputs it into the console. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8c_a9870412312b2edf1cd16455891a1a954}{diagonalmaker}} (int $\ast$$\ast$mass, int cols, int rows)
+\begin{DoxyCompactList}\small\item\em This function searches for the longest uninterrupted sequence out of all elements of given masive than puts this element into result masive. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em This is a simple int main function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Опис макровизначень}
+\mbox{\Hypertarget{main_8c_a0240ac851181b84ac374872dc5434ee4}\label{main_8c_a0240ac851181b84ac374872dc5434ee4}} 
+\index{main.c@{main.c}!N@{N}}
+\index{N@{N}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{N}{N}}
+{\footnotesize\ttfamily \#define N~3}
+
+
+
+\doxysubsection{Опис функцій}
+\mbox{\Hypertarget{main_8c_ad0ce3f6fbea5969668bcce88c1d3d7e6}\label{main_8c_ad0ce3f6fbea5969668bcce88c1d3d7e6}} 
+\index{main.c@{main.c}!author@{author}}
+\index{author@{author}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{author()}{author()}}
+{\footnotesize\ttfamily void author (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function gets name and surname of author and outputs it into the console. 
+
+\mbox{\Hypertarget{main_8c_a9870412312b2edf1cd16455891a1a954}\label{main_8c_a9870412312b2edf1cd16455891a1a954}} 
+\index{main.c@{main.c}!diagonalmaker@{diagonalmaker}}
+\index{diagonalmaker@{diagonalmaker}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{diagonalmaker()}{diagonalmaker()}}
+{\footnotesize\ttfamily void diagonalmaker (\begin{DoxyParamCaption}\item[{int $\ast$$\ast$}]{mass,  }\item[{int}]{cols,  }\item[{int}]{rows }\end{DoxyParamCaption})}
+
+
+
+This function searches for the longest uninterrupted sequence out of all elements of given masive than puts this element into result masive. 
+
+
+\begin{DoxyParams}[1]{Аргументи}
+\mbox{\texttt{ in}}  & {\em $\ast$p\+\_\+mass} & This param is a pointer of a given masive. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.c@{main.c}!main@{main}}
+\index{main@{main}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This is a simple int main function. 
+
+Граф всіх викликів цієї функції\+:
+% FIG 1

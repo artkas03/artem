@@ -1,6 +1,6 @@
 targets = main.bin 
 CC=gcc
-C_OPTS = -std=gnu11 -g -Wall -Wextra -Wformat-security -Wfloat-equal -Wshadow -Wconversion -Wlogical-not-parentheses -Wuninitialized -Wnull-dereference
+C_OPTS = -std=gnu11 -g -Wall -Wextra -Wformat-security -Wfloat-equal -Wshadow -Wconversion -Wlogical-not-parentheses -Wuninitialized -Wnull-dereference 
 
 all: clean prep compile run
 

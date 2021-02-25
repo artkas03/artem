@@ -1,3 +1,9 @@
+/**
+@mainpage
+@author Artem Kasyanov
+@date 25.02.2021
+@version 1.0
+*/
 #include <stdio.h>
 #include <dirent.h>
 #include <fcntl.h>
@@ -6,7 +12,9 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <string.h>
-
+/**
+@brief This is a simple int main, where we initialize our dirname and call catalog function.
+*/
 int main(){
 	printf("Enter directory:");
 	char dirname[100];
@@ -14,7 +22,11 @@ int main(){
 	catalog(dirname,0);
 	return 0;
 }
-
+/**
+@brief This function prints out entered by user directory.
+@param[in] *dirname Takes masive where user has entered directory.
+@param[in] spacecount Number of spaces for graphics.
+*/
 void catalog(char *dirname,int spacecount){
 	char dname[1000];
 	DIR *d;
