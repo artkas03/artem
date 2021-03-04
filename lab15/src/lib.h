@@ -11,7 +11,7 @@ struct ownerofinst{
 struct education_inst{
 	char if_edu_free[20];
 	char name_of_inst[30];
-	long int count_of_students;
+	char count_of_students[10];
 	struct ownerofinst owner_of_inst;
 	char start_of_day[15];
 };

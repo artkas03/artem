@@ -1,1 +1,3 @@
-Yes NTU"KHPI" 12000 Artem Kasyanov zhonayer2017@gmail.com start_at_8_o`clock
+Yes NTU"KHPI" 12000 Artem Kasyanov email@gmail.com start_at_8
+No Karazino 5000 Valera Murmurmur email2@gmail.com start_at_8:30
+Yes Beketova 7600 Vova Zelensky email3@gmail.com start_at_10:30

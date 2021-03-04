@@ -1,6 +1,7 @@
 #include "lib.h"
 
 int main(){
+	int numofstruct=0;
 	struct education_inst mass[10];
 	char name_of_struct[20];
 	printf("Enter file with data: ");
