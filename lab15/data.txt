@@ -1,3 +1,5 @@
-Yes NTU"KHPI" 12000 Artem Kasyanov email@gmail.com start_at_8
-No Karazino 5000 Valera Murmurmur email2@gmail.com start_at_8:30
-Yes Beketova 7600 Vova Zelensky email3@gmail.com start_at_10:30
+Yes NTU"KHPI" 1000 Artem Kasyanov aemail@gmail.com start_at_8 
+No Karazino 51000 Valera Murmurmur bemail2@gmail.com start_at_8:30 
+Yes Beketova 7600 Vova Zelensky cemail3@gmail.com start_at_10:30 
+No Shkola 200 Alesha Lavka demail4@gmail.com start_at_8:30 
+Yes Shkola2 15420 Nikita Olekseenko eemail5@gmail.com start_at_8

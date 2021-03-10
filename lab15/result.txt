@@ -1,17 +1,17 @@
 Yes
 NTU"KHPI"
-12000
+1000
 Artem
 Kasyanov
-email@gmail.com
+aemail@gmail.com
 start_at_8
 
 No
 Karazino
-5000
+51000
 Valera
 Murmurmur
-email2@gmail.com
+bemail2@gmail.com
 start_at_8:30
 
 Yes
@@ -19,6 +19,22 @@ Beketova
 7600
 Vova
 Zelensky
-email3@gmail.com
+cemail3@gmail.com
 start_at_10:30
+
+No
+Shkola
+200
+Alesha
+Lavka
+demail4@gmail.com
+start_at_8:30
+
+Yes
+Shkola2
+15420
+Nikita
+Olekseenkoeemail5@gmail.com
+eemail5@gmail.com
+start_at_8
 

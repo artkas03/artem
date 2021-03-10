@@ -32,7 +32,7 @@ This function prints out entered by user directory.
 
 
 \begin{DoxyParams}[1]{Аргументи}
-\mbox{\texttt{ in}}  & {\em $\ast$dirname} & Takes masive. \\
+\mbox{\texttt{ in}}  & {\em $\ast$dirname} & Takes masive where user has entered directory. \\
 \hline
 \mbox{\texttt{ in}}  & {\em spacecount} & Number of spaces for graphics. \\
 \hline
